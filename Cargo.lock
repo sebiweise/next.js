@@ -3957,6 +3957,7 @@ dependencies = [
  "futures",
  "indexmap 2.5.0",
  "next-core",
+ "petgraph",
  "regex",
  "serde",
  "serde_json",
