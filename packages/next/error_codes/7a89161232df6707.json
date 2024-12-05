@@ -1,0 +1,5 @@
+{
+  "error_message": "No response is returned from route handler '%s'. Ensure you return a \\`Response\\` or a \\`NextResponse\\` in all branches of your handler.",
+  "file_path": "packages/next/src/server/route-modules/app-route/module.ts",
+  "occurrence_count": 1
+}

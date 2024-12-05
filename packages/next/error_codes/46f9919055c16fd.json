@@ -1,0 +1,5 @@
+{
+  "error_message": "Failed to set Next.js data cache, items over 2MB can not be cached (%s bytes)",
+  "file_path": "packages/next/src/server/lib/incremental-cache/index.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "A Node.js API is used (%s) which is not supported in the Edge Runtime.\nLearn more: https://nextjs.org/docs/api-reference/edge-runtime",
+  "file_path": "packages/next/src/server/web/sandbox/context.ts",
+  "occurrence_count": 1
+}

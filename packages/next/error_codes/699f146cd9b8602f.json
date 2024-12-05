@@ -1,0 +1,5 @@
+{
+  "error_message": "Unknown dynamic param type",
+  "file_path": "packages/next/src/server/app-render/collect-segment-data.tsx",
+  "occurrence_count": 1
+}

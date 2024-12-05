@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: React.unstable_postpone is not defined. This suggests the wrong version of React was loaded. This is a bug in Next.js",
+  "file_path": "packages/next/src/server/app-render/dynamic-rendering.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid \"experimental.cacheHandlers\" provided, expected an object e.g. { default: '/my-handler.js' }, received %s",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

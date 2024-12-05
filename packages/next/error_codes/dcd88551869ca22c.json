@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: Unexpected optional import %s",
+  "file_path": "packages/next/src/build/load-entrypoint.ts",
+  "occurrence_count": 1
+}

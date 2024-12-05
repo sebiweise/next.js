@@ -1,0 +1,5 @@
+{
+  "error_message": "Using a self signed certificate is only supported with `next dev`.",
+  "file_path": "packages/next/src/server/lib/start-server.ts",
+  "occurrence_count": 1
+}

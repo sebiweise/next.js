@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid interception route: %s. Cannot use (..) marker at the root level, use (.) instead.",
+  "file_path": "packages/next/src/server/lib/interception-routes.ts",
+  "occurrence_count": 1
+}

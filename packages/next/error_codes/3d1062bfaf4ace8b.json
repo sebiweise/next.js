@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant revalidate: 0 can not be passed to unstable_cache(), must be \"false\" or \"> 0\" %s",
+  "file_path": "packages/next/src/server/web/spec-extension/unstable-cache.ts",
+  "occurrence_count": 1
+}

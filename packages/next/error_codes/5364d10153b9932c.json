@@ -1,0 +1,5 @@
+{
+  "error_message": "The default export is not a React Component in page: \"%s\"",
+  "file_path": "packages/next/src/shared/lib/router/router.ts",
+  "occurrence_count": 1
+}

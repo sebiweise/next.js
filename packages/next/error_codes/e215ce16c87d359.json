@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid redirect arguments. Please use a single argument URL, e.g. res.redirect('/destination') or use a status code and URL, e.g. res.redirect(307, '/destination').",
+  "file_path": "packages/next/src/server/api-utils/index.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: Missing `host` header from a forwarded Server Actions request.",
+  "file_path": "packages/next/src/server/app-render/action-handler.ts",
+  "occurrence_count": 2
+}

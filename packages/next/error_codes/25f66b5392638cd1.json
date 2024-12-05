@@ -1,0 +1,5 @@
+{
+  "error_message": "\\`redirect\\` and \\`notFound\\` can not both be returned from %s at the same time. Page: %s\\nSee more info here: https://nextjs.org/docs/messages/gssp-mixed-not-found-redirect",
+  "file_path": "packages/next/src/server/render.tsx",
+  "occurrence_count": 1
+}

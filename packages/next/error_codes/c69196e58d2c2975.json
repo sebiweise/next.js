@@ -1,0 +1,5 @@
+{
+  "error_message": "Expected span to be ended",
+  "file_path": "packages/next/src/client/tracing/report-to-socket.ts",
+  "occurrence_count": 1
+}

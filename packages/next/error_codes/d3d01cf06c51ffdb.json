@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid distDir provided, distDir can not be an empty string. Please remove this config or set it to undefined",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

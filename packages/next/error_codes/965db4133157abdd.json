@@ -1,0 +1,5 @@
+{
+  "error_message": "The \"icss\" option is deprecated, use \"modules.compileType: \"icss\"\" instead",
+  "file_path": "packages/next/src/build/webpack/loaders/css-loader/src/index.ts",
+  "occurrence_count": 1
+}

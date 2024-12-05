@@ -1,0 +1,5 @@
+{
+  "error_message": "cacheLife() can only be called inside a \"use cache\" function.",
+  "file_path": "packages/next/src/server/use-cache/cache-life.ts",
+  "occurrence_count": 1
+}

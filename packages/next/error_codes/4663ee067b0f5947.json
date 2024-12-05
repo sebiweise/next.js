@@ -1,0 +1,5 @@
+{
+  "error_message": "prepare() must be called before performing this operation",
+  "file_path": "packages/next/src/server/next.ts",
+  "occurrence_count": 1
+}

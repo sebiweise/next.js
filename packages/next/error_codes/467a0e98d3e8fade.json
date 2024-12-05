@@ -1,0 +1,5 @@
+{
+  "error_message": "invariant attempted to set non-image to image-cache",
+  "file_path": "packages/next/src/server/image-optimizer.ts",
+  "occurrence_count": 1
+}

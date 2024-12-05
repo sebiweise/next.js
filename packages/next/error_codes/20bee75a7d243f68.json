@@ -1,0 +1,5 @@
+{
+  "error_message": "Multiple children were passed to <Link> with \\`href\\` of \\`%s\\` but only one child is supported https://nextjs.org/docs/messages/link-multiple-children%s",
+  "file_path": "packages/next/src/client/link.tsx",
+  "occurrence_count": 1
+}

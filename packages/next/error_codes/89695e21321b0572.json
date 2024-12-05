@@ -1,0 +1,5 @@
+{
+  "error_message": "It's currently unsupported to use \"export *\" in a client boundary. Please use named exports instead.",
+  "file_path": "packages/next/src/build/webpack/loaders/next-flight-loader/index.ts",
+  "occurrence_count": 1
+}

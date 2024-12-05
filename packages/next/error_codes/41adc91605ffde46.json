@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: Unexpected redirect url format",
+  "file_path": "packages/next/src/server/route-modules/app-route/module.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "The Edge Function \"pages%s\" must export a \\`default\\` function",
+  "file_path": "packages/next/src/build/templates/pages-edge-api.ts",
+  "occurrence_count": 1
+}

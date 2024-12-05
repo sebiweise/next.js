@@ -1,0 +1,5 @@
+{
+  "error_message": "\\`redirect\\` can not be returned from getStaticProps during prerendering (%s)\\nSee more info here: https://nextjs.org/docs/messages/gsp-redirect-during-prerender",
+  "file_path": "packages/next/src/server/render.tsx",
+  "occurrence_count": 1
+}

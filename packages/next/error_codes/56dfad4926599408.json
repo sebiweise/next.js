@@ -1,0 +1,5 @@
+{
+  "error_message": "Failed to fetch _devPagesManifest.json. Is something blocking that network request?\\nRead more: https://nextjs.org/docs/messages/failed-to-fetch-devpagesmanifest",
+  "file_path": "packages/next/src/client/page-loader.ts",
+  "occurrence_count": 1
+}

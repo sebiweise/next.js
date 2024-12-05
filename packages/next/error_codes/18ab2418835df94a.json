@@ -1,0 +1,5 @@
+{
+  "error_message": "Image with src \"%s\" must use \"width\" and \"height\" properties or \"layout='fill'\" property.",
+  "file_path": "packages/next/src/client/legacy/image.tsx",
+  "occurrence_count": 1
+}

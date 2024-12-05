@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid fallback option: %s. Fallback option must be a string, null, undefined, or false.",
+  "file_path": "packages/next/src/lib/fallback.ts",
+  "occurrence_count": 1
+}

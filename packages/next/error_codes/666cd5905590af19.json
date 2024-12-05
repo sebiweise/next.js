@@ -1,0 +1,5 @@
+{
+  "error_message": "Page with dynamic = \"error\" encountered dynamic data method on %s.",
+  "file_path": "packages/next/src/export/routes/app-page.ts",
+  "occurrence_count": 1
+}

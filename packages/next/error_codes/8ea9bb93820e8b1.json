@@ -1,0 +1,5 @@
+{
+  "error_message": "Span has already ended",
+  "file_path": "packages/next/src/client/tracing/tracer.ts",
+  "occurrence_count": 1
+}

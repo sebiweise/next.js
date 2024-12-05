@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: The detected locale does not match the locale in the query. Expected to find '%s' in '%s' but found '%s'}",
+  "file_path": "packages/next/src/server/lib/i18n-provider.ts",
+  "occurrence_count": 1
+}

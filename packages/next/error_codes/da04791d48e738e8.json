@@ -1,0 +1,5 @@
+{
+  "error_message": "getStaticPaths can only be used with dynamic pages, not '%s'.\\nLearn more: https://nextjs.org/docs/routing/dynamic-routes",
+  "file_path": "packages/next/src/build/utils.ts",
+  "occurrence_count": 1
+}

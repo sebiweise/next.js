@@ -1,0 +1,5 @@
+{
+  "error_message": "Build failed because of webpack errors",
+  "file_path": "packages/next/src/build/webpack-build/impl.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: missing action dispatcher.",
+  "file_path": "packages/next/src/client/app-call-server.ts",
+  "occurrence_count": 1
+}

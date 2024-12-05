@@ -1,0 +1,5 @@
+{
+  "error_message": "Build optimization failed: found page%s without a React Component as default export in \\n%s\\n\\nSee https://nextjs.org/docs/messages/page-without-valid-component for more info.\\n",
+  "file_path": "packages/next/src/build/index.ts",
+  "occurrence_count": 1
+}

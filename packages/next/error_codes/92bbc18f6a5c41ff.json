@@ -1,0 +1,5 @@
+{
+  "error_message": "could not get asset: %s",
+  "file_path": "packages/next/src/build/webpack/plugins/subresource-integrity-plugin.ts",
+  "occurrence_count": 1
+}

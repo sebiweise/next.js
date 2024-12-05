@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: page postponed without PPR being enabled",
+  "file_path": "packages/next/src/export/routes/app-page.ts",
+  "occurrence_count": 1
+}

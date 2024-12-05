@@ -1,0 +1,5 @@
+{
+  "error_message": "Page \"%s\" cannot use both \\`export const runtime = 'edge'\\` and export \\`generateStaticParams\\`.",
+  "file_path": "packages/next/src/build/analysis/get-page-static-info.ts",
+  "occurrence_count": 1
+}

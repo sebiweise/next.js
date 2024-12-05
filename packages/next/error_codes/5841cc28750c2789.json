@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid response %s",
+  "file_path": "packages/next/src/server/lib/dev-bundler-service.ts",
+  "occurrence_count": 1
+}

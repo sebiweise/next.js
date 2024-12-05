@@ -1,0 +1,5 @@
+{
+  "error_message": "Can't use lazyRenderPagesPage in minimal mode",
+  "file_path": "packages/next/src/server/route-modules/pages/module.render.ts",
+  "occurrence_count": 1
+}

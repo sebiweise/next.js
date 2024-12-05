@@ -1,0 +1,5 @@
+{
+  "error_message": "Failed to get registry from \"%s\".",
+  "file_path": "packages/next/src/lib/helpers/get-registry.ts",
+  "occurrence_count": 1
+}

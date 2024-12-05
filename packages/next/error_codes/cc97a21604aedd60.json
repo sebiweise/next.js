@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: NodeNextRequest.stream() can only be called once",
+  "file_path": "packages/next/src/server/base-http/node.ts",
+  "occurrence_count": 1
+}

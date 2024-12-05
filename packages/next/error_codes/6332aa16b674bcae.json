@@ -1,0 +1,5 @@
+{
+  "error_message": "The Middleware \"%s\" must export a \\`middleware\\` or a \\`default\\` function",
+  "file_path": "packages/next/src/build/templates/middleware.ts",
+  "occurrence_count": 1
+}

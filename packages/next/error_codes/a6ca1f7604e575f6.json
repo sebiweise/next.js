@@ -1,0 +1,5 @@
+{
+  "error_message": "generateBuildId did not return a string. https://nextjs.org/docs/messages/generatebuildid-not-a-string",
+  "file_path": "packages/next/src/build/generate-build-id.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "No children were passed to <Link> with \\`href\\` of \\`%s\\` but one child is required https://nextjs.org/docs/messages/link-no-children",
+  "file_path": "packages/next/src/client/link.tsx",
+  "occurrence_count": 1
+}

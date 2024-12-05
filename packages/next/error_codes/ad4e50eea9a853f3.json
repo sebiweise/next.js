@@ -1,0 +1,5 @@
+{
+  "error_message": "Next.js requires react >= 18.2.0 to be installed.",
+  "file_path": "packages/next/src/build/webpack-config.ts",
+  "occurrence_count": 1
+}

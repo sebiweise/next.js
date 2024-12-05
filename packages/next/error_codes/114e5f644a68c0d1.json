@@ -1,0 +1,5 @@
+{
+  "error_message": "%s%s",
+  "file_path": "packages/next/src/build/webpack/loaders/error-loader.ts",
+  "occurrence_count": 1
+}

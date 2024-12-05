@@ -1,0 +1,5 @@
+{
+  "error_message": "Cannot prefetch '%s' because it cannot be converted to a URL.",
+  "file_path": "packages/next/src/client/components/app-router.tsx",
+  "occurrence_count": 1
+}

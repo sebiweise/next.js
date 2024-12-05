@@ -1,0 +1,5 @@
+{
+  "error_message": "This loader is only usable as a module",
+  "file_path": "packages/next/src/build/webpack/loaders/next-edge-app-route-loader/index.ts",
+  "occurrence_count": 1
+}

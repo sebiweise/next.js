@@ -1,0 +1,5 @@
+{
+  "error_message": "Image with src \"%s\" has both \"priority\" and \"loading='lazy'\" properties. Only one should be used.",
+  "file_path": "packages/next/src/client/legacy/image.tsx",
+  "occurrence_count": 1
+}

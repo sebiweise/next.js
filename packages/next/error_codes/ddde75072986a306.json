@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid revalidate value \"%s\" on \"%s\", must be a non-negative number or false",
+  "file_path": "packages/next/src/server/lib/patch-fetch.ts",
+  "occurrence_count": 1
+}

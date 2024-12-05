@@ -1,0 +1,5 @@
+{
+  "error_message": "INVALID_DEFAULT_EXPORT",
+  "file_path": "packages/next/src/build/utils.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Failed to parse src \"%s\" on \\`next/image\\`, if using relative image it must start with a leading slash \"/\" or be an absolute URL (http:// or https://)",
+  "file_path": "packages/next/src/client/legacy/image.tsx",
+  "occurrence_count": 1
+}

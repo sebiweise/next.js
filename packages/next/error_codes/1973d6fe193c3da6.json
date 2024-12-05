@@ -1,0 +1,5 @@
+{
+  "error_message": "Proxy request aborted [%s %s]",
+  "file_path": "packages/next/src/experimental/testmode/fetch.ts",
+  "occurrence_count": 1
+}

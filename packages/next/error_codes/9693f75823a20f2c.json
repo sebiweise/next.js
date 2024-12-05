@@ -1,0 +1,5 @@
+{
+  "error_message": "expected string|object",
+  "file_path": "packages/next/src/build/webpack/loaders/resolve-url-loader/lib/file-protocol.ts",
+  "occurrence_count": 1
+}

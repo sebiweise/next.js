@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant cant propagate server field, no app initialized",
+  "file_path": "packages/next/src/server/lib/render-server.ts",
+  "occurrence_count": 1
+}

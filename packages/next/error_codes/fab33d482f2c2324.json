@@ -1,0 +1,5 @@
+{
+  "error_message": "The provided export path '%s' doesn't match the '%s' page.\\nRead more: https://nextjs.org/docs/messages/export-path-mismatch",
+  "file_path": "packages/next/src/export/helpers/get-params.ts",
+  "occurrence_count": 1
+}

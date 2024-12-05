@@ -1,0 +1,5 @@
+{
+  "error_message": "Specified basePath should not end with /, found \"%s\"",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

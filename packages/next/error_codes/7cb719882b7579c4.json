@@ -1,0 +1,5 @@
+{
+  "error_message": "ESM packages (%s) need to be imported. Use 'import' to reference the package instead. https://nextjs.org/docs/messages/import-esm-externals",
+  "file_path": "packages/next/src/build/handle-externals.ts",
+  "occurrence_count": 1
+}

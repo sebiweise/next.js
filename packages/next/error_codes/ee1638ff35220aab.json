@@ -1,0 +1,5 @@
+{
+  "error_message": "invariant: unexpected cachedResponse of kind fetch in response cache",
+  "file_path": "packages/next/src/server/response-cache/index.ts",
+  "occurrence_count": 1
+}

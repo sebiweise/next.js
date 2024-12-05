@@ -1,0 +1,5 @@
+{
+  "error_message": "A page's revalidate option must be seconds expressed as a natural number. Mixed numbers and strings cannot be used. Received '%s' for %s",
+  "file_path": "packages/next/src/server/render.tsx",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Unable to find uri in \"%s\"",
+  "file_path": "packages/next/src/build/webpack/loaders/css-loader/src/plugins/postcss-import-parser.ts",
+  "occurrence_count": 2
+}

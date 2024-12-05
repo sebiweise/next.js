@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid src prop (%s) on \\`next/image\\` does not match \\`images.localPatterns\\` configured in your \\`next.config.js\\`\\nSee more info: https://nextjs.org/docs/messages/next-image-unconfigured-localpatterns",
+  "file_path": "packages/next/src/client/legacy/image.tsx",
+  "occurrence_count": 1
+}

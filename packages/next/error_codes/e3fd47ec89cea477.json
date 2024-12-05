@@ -1,0 +1,5 @@
+{
+  "error_message": "Component rendered inside next/link has to pass click event to \"onClick\" prop.",
+  "file_path": "packages/next/src/client/link.tsx",
+  "occurrence_count": 1
+}

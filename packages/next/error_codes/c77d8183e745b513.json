@@ -1,0 +1,5 @@
+{
+  "error_message": "Page \"%s\" is missing param \"%s\" in \"generateStaticParams()\", which is required with \"output: export\" config.",
+  "file_path": "packages/next/src/server/base-server.ts",
+  "occurrence_count": 1
+}

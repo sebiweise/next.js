@@ -1,0 +1,5 @@
+{
+  "error_message": "Unexpected route kind %s",
+  "file_path": "packages/next/src/server/response-cache/utils.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "NextResponse.rewrite() was used in a app route handler, this is not currently supported. Please remove the invocation to continue.",
+  "file_path": "packages/next/src/server/route-modules/app-route/module.ts",
+  "occurrence_count": 1
+}

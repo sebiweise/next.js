@@ -1,0 +1,5 @@
+{
+  "error_message": "Specified i18n.locales contains invalid values (%s), locales must be valid locale tags provided as strings e.g. \"en-US\".\\nSee here for list of valid language sub-tags: http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: failed to get page data for %s",
+  "file_path": "packages/next/src/export/routes/app-page.ts",
+  "occurrence_count": 1
+}

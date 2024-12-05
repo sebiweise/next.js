@@ -1,0 +1,5 @@
+{
+  "error_message": "A default cacheLife profile must always be provided. This is a bug in Next.js.",
+  "file_path": "packages/next/src/server/use-cache/use-cache-wrapper.ts",
+  "occurrence_count": 1
+}

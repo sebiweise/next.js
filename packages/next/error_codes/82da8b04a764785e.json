@@ -1,0 +1,5 @@
+{
+  "error_message": "module not found",
+  "file_path": "packages/next/src/build/webpack/plugins/next-trace-entrypoints-plugin.ts",
+  "occurrence_count": 1
+}

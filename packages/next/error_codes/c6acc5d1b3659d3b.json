@@ -1,0 +1,5 @@
+{
+  "error_message": "Configuring Next.js via '%s' is not supported. Please replace the file with 'next.config.js', 'next.config.mjs', or 'next.config.ts'.",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

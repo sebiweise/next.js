@@ -1,0 +1,5 @@
+{
+  "error_message": "invariant SSG should not return an image cache value",
+  "file_path": "packages/next/src/server/base-server.ts",
+  "occurrence_count": 1
+}

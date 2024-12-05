@@ -1,0 +1,5 @@
+{
+  "error_message": "Your custom PostCSS configuration may not export a function. Please export a plain object instead.\\nRead more: https://nextjs.org/docs/messages/postcss-function",
+  "file_path": "packages/next/src/build/webpack/config/blocks/css/plugins.ts",
+  "occurrence_count": 1
+}

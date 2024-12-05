@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid fallback mode: %s",
+  "file_path": "packages/next/src/lib/fallback.ts",
+  "occurrence_count": 1
+}

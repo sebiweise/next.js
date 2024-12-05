@@ -1,0 +1,5 @@
+{
+  "error_message": "Image with src \"%s\" has both \"height\" and \"fill\" properties. Only one should be used.",
+  "file_path": "packages/next/src/shared/lib/get-img-props.ts",
+  "occurrence_count": 1
+}

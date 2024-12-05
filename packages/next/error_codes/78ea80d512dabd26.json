@@ -1,0 +1,5 @@
+{
+  "error_message": "Multiple router state headers were sent. This is not allowed.",
+  "file_path": "packages/next/src/server/app-render/parse-and-validate-flight-router-state.tsx",
+  "occurrence_count": 1
+}

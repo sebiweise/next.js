@@ -1,0 +1,5 @@
+{
+  "error_message": "Failed to load the `babel-plugin-react-compiler`. It is required to use the React Compiler. Please install it.",
+  "file_path": "packages/next/src/build/get-babel-loader-config.ts",
+  "occurrence_count": 1
+}

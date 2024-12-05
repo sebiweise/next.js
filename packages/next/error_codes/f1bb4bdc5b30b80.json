@@ -1,0 +1,5 @@
+{
+  "error_message": "Failed prop type: The prop \\`%s\\` expects a %s in \\`<Link>\\`, but got \\`%s\\` instead.%s",
+  "file_path": "packages/next/src/client/app-dir/link.tsx",
+  "occurrence_count": 1
+}

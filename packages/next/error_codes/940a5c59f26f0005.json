@@ -1,0 +1,5 @@
+{
+  "error_message": "ImageResponse moved from \"next/server\" to \"next/og\" since Next.js 14, please import from \"next/og\" instead",
+  "file_path": "packages/next/src/server/web/spec-extension/image-response.ts",
+  "occurrence_count": 1
+}

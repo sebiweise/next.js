@@ -1,0 +1,5 @@
+{
+  "error_message": "Expected incremental cache to exist. This is a bug in Next.js",
+  "file_path": "packages/next/src/server/app-render/app-render.tsx",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.",
+  "file_path": "packages/next/src/build/webpack/loaders/next-style-loader/runtime/injectStylesIntoStyleTag.ts",
+  "occurrence_count": 1
+}

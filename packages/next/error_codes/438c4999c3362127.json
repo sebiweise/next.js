@@ -1,0 +1,5 @@
+{
+  "error_message": "Unknown dynamic param type",
+  "file_path": "packages/next/src/server/app-render/get-short-dynamic-param-type.tsx",
+  "occurrence_count": 1
+}

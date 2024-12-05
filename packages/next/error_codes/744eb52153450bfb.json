@@ -1,0 +1,5 @@
+{
+  "error_message": "Route %s used %s without first calling \\`await connection()\\`. See more info here: https://nextjs.org/docs/messages/next-prerender-sync-request",
+  "file_path": "packages/next/src/server/route-modules/app-route/module.ts",
+  "occurrence_count": 1
+}

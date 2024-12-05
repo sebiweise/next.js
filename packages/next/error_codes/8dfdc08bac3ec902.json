@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: App Route Route Modules cannot be used in the edge runtime",
+  "file_path": "packages/next/src/server/base-server.ts",
+  "occurrence_count": 1
+}

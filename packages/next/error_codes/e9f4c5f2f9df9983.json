@@ -1,0 +1,5 @@
+{
+  "error_message": "The \"modules.namedExport\" option requires the \"modules.exportLocalsConvention\" option to be \"camelCaseOnly\"",
+  "file_path": "packages/next/src/build/webpack/loaders/css-loader/src/index.ts",
+  "occurrence_count": 1
+}

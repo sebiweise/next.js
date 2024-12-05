@@ -1,0 +1,5 @@
+{
+  "error_message": "Node.js binary module ./%s is not supported in the browser. Please only use the module on server side",
+  "file_path": "packages/next/src/build/webpack/loaders/next-error-browser-binary-loader.ts",
+  "occurrence_count": 1
+}

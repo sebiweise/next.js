@@ -1,0 +1,5 @@
+{
+  "error_message": "notFound() is not allowed to use in root layout",
+  "file_path": "packages/next/src/client/components/dev-root-http-access-fallback-boundary.tsx",
+  "occurrence_count": 1
+}

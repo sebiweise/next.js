@@ -1,0 +1,5 @@
+{
+  "error_message": "\\`forbidden()\\` is experimental and only allowed to be enabled when \\`experimental.authInterrupts\\` is enabled.",
+  "file_path": "packages/next/src/client/components/forbidden.ts",
+  "occurrence_count": 1
+}

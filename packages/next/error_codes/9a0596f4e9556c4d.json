@@ -1,0 +1,5 @@
+{
+  "error_message": "The default export is not a React Component in \"%s/%s\"",
+  "file_path": "packages/next/src/server/app-render/create-component-tree.tsx",
+  "occurrence_count": 1
+}

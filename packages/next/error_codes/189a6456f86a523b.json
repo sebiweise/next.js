@@ -1,0 +1,5 @@
+{
+  "error_message": "The `size` option must be one of 32, 64, 128, 256, 512, or 1024",
+  "file_path": "packages/next/src/shared/lib/fnv1a.ts",
+  "occurrence_count": 1
+}

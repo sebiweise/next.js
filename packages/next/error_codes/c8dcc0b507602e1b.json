@@ -1,0 +1,5 @@
+{
+  "error_message": "Route %s used \"%s\" during render which is unsupported. To ensure revalidation is performed consistently it must always happen outside of renders and cached functions. See more info here: https://nextjs.org/docs/app/building-your-application/rendering/static-and-dynamic#dynamic-rendering",
+  "file_path": "packages/next/src/server/web/spec-extension/revalidate.ts",
+  "occurrence_count": 1
+}

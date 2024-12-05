@@ -1,0 +1,5 @@
+{
+  "error_message": "mis-matched route type: isApp && page for %s",
+  "file_path": "packages/next/src/server/dev/hot-reloader-turbopack.ts",
+  "occurrence_count": 1
+}

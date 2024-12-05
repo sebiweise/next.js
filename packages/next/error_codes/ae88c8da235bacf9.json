@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: expected filename to exist in cache",
+  "file_path": "packages/next/src/server/route-matcher-providers/dev/dev-app-page-route-matcher-provider.ts",
+  "occurrence_count": 1
+}

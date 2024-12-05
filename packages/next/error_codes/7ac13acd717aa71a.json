@@ -1,0 +1,5 @@
+{
+  "error_message": "To use middleware you must provide a `hostname` and `port` to the Next.js Server",
+  "file_path": "packages/next/src/server/next-server.ts",
+  "occurrence_count": 2
+}

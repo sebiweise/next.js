@@ -1,0 +1,5 @@
+{
+  "error_message": "<Html> should not be imported outside of pages/_document.\\nRead more: https://nextjs.org/docs/messages/no-document-import-in-page",
+  "file_path": "packages/next/src/shared/lib/html-context.shared-runtime.ts",
+  "occurrence_count": 1
+}

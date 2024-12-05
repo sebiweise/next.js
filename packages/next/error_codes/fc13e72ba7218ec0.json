@@ -1,0 +1,5 @@
+{
+  "error_message": "Specified basePath /. basePath has to be either an empty string or a path prefix\"",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

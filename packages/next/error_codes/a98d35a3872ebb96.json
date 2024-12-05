@@ -1,0 +1,5 @@
+{
+  "error_message": "Duration is too long to express as float64: %s",
+  "file_path": "packages/next/src/trace/trace.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: No locales provided",
+  "file_path": "packages/next/src/server/lib/i18n-provider.ts",
+  "occurrence_count": 1
+}

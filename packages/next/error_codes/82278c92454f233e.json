@@ -1,0 +1,5 @@
+{
+  "error_message": "Taint can only be used with the taint flag.",
+  "file_path": "packages/next/src/server/app-render/rsc/taint.ts",
+  "occurrence_count": 1
+}

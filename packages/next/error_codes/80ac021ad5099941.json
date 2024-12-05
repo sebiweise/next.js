@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: unexpected marker",
+  "file_path": "packages/next/src/server/lib/interception-routes.ts",
+  "occurrence_count": 1
+}

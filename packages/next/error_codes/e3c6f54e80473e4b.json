@@ -1,0 +1,5 @@
+{
+  "error_message": "Unknown cache handler: %s",
+  "file_path": "packages/next/src/server/use-cache/use-cache-wrapper.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Specified pageExtensions is not an array of strings, found \"%s\". Please update this config or remove it.",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

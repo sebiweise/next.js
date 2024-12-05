@@ -1,0 +1,5 @@
+{
+  "error_message": "loader %s for match \"%s\" does not have serializable options. Ensure that options passed are plain JavaScript objects and values.",
+  "file_path": "packages/next/src/build/swc/index.ts",
+  "occurrence_count": 1
+}

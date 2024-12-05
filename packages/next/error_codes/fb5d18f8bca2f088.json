@@ -1,0 +1,5 @@
+{
+  "error_message": "Circular structure in \"getInitialProps\" result of page \"%s\". https://nextjs.org/docs/messages/circular-structure",
+  "file_path": "packages/next/src/pages/_document.tsx",
+  "occurrence_count": 1
+}

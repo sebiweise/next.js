@@ -1,0 +1,5 @@
+{
+  "error_message": "invariant: attempted to buildStaticPaths without \"staticPathsResult\" or \"getStaticPaths\" %s",
+  "file_path": "packages/next/src/build/utils.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: buildID is required",
+  "file_path": "packages/next/src/server/normalizers/request/next-data.ts",
+  "occurrence_count": 1
+}

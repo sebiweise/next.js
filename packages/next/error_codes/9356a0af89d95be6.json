@@ -1,0 +1,5 @@
+{
+  "error_message": "request failed with status %s",
+  "file_path": "packages/next/src/lib/download-swc.ts",
+  "occurrence_count": 1
+}

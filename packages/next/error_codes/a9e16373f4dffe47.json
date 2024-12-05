@@ -1,0 +1,5 @@
+{
+  "error_message": "Using client components is not allowed in this environment.",
+  "file_path": "packages/next/src/client/use-client-disallowed.ts",
+  "occurrence_count": 1
+}

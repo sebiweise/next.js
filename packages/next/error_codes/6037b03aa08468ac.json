@@ -1,0 +1,5 @@
+{
+  "error_message": "Conflicting public and page file%s found. https://nextjs.org/docs/messages/conflicting-public-file-page\\n%s",
+  "file_path": "packages/next/src/build/index.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid <Link> with <a> child. Please remove <a> or use <Link legacyBehavior>.\nLearn more: https://nextjs.org/docs/messages/invalid-new-link-with-extra-anchor",
+  "file_path": "packages/next/src/client/link.tsx",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "PrefixPathnameNormalizer: prefix \"%s\" should not end with a slash",
+  "file_path": "packages/next/src/server/normalizers/request/prefix.ts",
+  "occurrence_count": 1
+}

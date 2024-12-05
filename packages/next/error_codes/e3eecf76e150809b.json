@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: should handle all automatic implementable methods, got method: %s",
+  "file_path": "packages/next/src/server/route-modules/app-route/helpers/auto-implement-methods.ts",
+  "occurrence_count": 1
+}

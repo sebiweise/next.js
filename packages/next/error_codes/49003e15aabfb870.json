@@ -1,0 +1,5 @@
+{
+  "error_message": "Route %s errored during the prospective render. These errors are normally ignored and may not prevent the route from prerendering but are logged here because build debugging is enabled.\n          \nOriginal Error: %s",
+  "file_path": "packages/next/src/server/app-render/prospective-render-utils.ts",
+  "occurrence_count": 1
+}

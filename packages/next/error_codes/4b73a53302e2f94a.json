@@ -1,0 +1,5 @@
+{
+  "error_message": "The Next.js Babel loader does not support .mjs or .cjs config files.",
+  "file_path": "packages/next/src/build/babel/loader/get-config.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Expected to use %s bindings (%s) for React but the current process is referencing '%s' from the %s bindings (%s). This is likely a bug in our integration of the Next.js server runtime.",
+  "file_path": "packages/next/src/server/route-modules/app-page/vendored/ssr/entrypoints.ts",
+  "occurrence_count": 1
+}

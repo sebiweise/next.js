@@ -1,0 +1,5 @@
+{
+  "error_message": "Image with src \"%s\" is missing \"loader\" prop.\\nRead more: https://nextjs.org/docs/messages/next-image-missing-loader",
+  "file_path": "packages/next/src/client/legacy/image.tsx",
+  "occurrence_count": 1
+}

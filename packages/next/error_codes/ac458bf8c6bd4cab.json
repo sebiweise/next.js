@@ -1,0 +1,5 @@
+{
+  "error_message": "Unsupported platform: %s",
+  "file_path": "packages/next/src/lib/helpers/get-cache-directory.ts",
+  "occurrence_count": 1
+}

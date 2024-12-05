@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: missing bootstrap script. This is a bug in Next.js",
+  "file_path": "packages/next/src/server/app-render/required-scripts.tsx",
+  "occurrence_count": 1
+}

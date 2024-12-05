@@ -1,0 +1,5 @@
+{
+  "error_message": "`unstable_after()`: Argument must be a promise or a function",
+  "file_path": "packages/next/src/server/after/after-context.ts",
+  "occurrence_count": 1
+}

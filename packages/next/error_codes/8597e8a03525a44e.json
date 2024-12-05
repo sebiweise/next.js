@@ -1,0 +1,5 @@
+{
+  "error_message": "Specified images.loader property (%s) cannot be used with images.loaderFile property. Please set images.loader to \"custom\".",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

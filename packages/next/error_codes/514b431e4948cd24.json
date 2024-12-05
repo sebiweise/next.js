@@ -1,0 +1,5 @@
+{
+  "error_message": "Image Optimization using the default loader is not compatible with \\`{ output: 'export' }\\`.\n  Possible solutions:\n    - Remove \\`{ output: 'export' }\\` and run \"next start\" to run server mode including the Image Optimization API.\n    - Configure \\`{ images: { unoptimized: true } }\\` in \\`next.config.js\\` to disable the Image Optimization API.\n  Read more: https://nextjs.org/docs/messages/export-image-api",
+  "file_path": "packages/next/src/shared/lib/get-img-props.ts",
+  "occurrence_count": 1
+}

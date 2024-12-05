@@ -1,0 +1,5 @@
+{
+  "error_message": "cache: 'no-store' used on fetch for %s with 'export const fetchCache = 'only-cache'",
+  "file_path": "packages/next/src/server/lib/patch-fetch.ts",
+  "occurrence_count": 1
+}

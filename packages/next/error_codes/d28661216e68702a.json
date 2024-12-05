@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: Couldn't find action module ID from module map.",
+  "file_path": "packages/next/src/server/app-render/action-handler.ts",
+  "occurrence_count": 1
+}

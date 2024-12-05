@@ -1,0 +1,5 @@
+{
+  "error_message": "`getInitialProps` in Document component is not supported with the Edge Runtime.",
+  "file_path": "packages/next/src/server/render.tsx",
+  "occurrence_count": 1
+}

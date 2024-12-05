@@ -1,0 +1,5 @@
+{
+  "error_message": "An unexpected Turbopack error occurred. Please see the output of `next dev` for more details.",
+  "file_path": "packages/next/src/client/components/react-dev-overlay/internal/helpers/node-stack-frames.ts",
+  "occurrence_count": 1
+}

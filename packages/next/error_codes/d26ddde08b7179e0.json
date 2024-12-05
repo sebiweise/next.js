@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid flags should be run as node detached-flush dev ./path-to/project",
+  "file_path": "packages/next/src/telemetry/detached-flush.ts",
+  "occurrence_count": 1
+}

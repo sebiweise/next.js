@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid OpenGraph type: %s",
+  "file_path": "packages/next/src/lib/metadata/generate/opengraph.tsx",
+  "occurrence_count": 1
+}

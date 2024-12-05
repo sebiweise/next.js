@@ -1,0 +1,5 @@
+{
+  "error_message": "Failed to write turborepo access trace file",
+  "file_path": "packages/next/src/build/turborepo-access-trace/helpers.ts",
+  "occurrence_count": 1
+}

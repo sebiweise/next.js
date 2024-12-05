@@ -1,0 +1,5 @@
+{
+  "error_message": "Encountered unknown module type: %s. Please open an issue.",
+  "file_path": "packages/next/src/build/webpack-config.ts",
+  "occurrence_count": 1
+}

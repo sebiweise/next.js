@@ -1,0 +1,5 @@
+{
+  "error_message": "The stale option must be a number of seconds.",
+  "file_path": "packages/next/src/server/use-cache/cache-life.ts",
+  "occurrence_count": 1
+}

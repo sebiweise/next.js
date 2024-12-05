@@ -1,0 +1,5 @@
+{
+  "error_message": "The key \"%s\" under \"env\" in %s is not allowed. https://nextjs.org/docs/messages/env-key-not-allowed",
+  "file_path": "packages/next/src/build/webpack/plugins/define-env-plugin.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid assetPrefix provided. Original error: %s",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

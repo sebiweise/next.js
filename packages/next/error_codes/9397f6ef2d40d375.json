@@ -1,0 +1,5 @@
+{
+  "error_message": "> Build directory is not writeable. https://nextjs.org/docs/messages/build-dir-not-writeable",
+  "file_path": "packages/next/src/build/index.ts",
+  "occurrence_count": 1
+}

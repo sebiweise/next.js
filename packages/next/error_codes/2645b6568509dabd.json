@@ -1,0 +1,5 @@
+{
+  "error_message": "\"next start\" does not work with \"output: export\" configuration. Use \"npx serve@latest out\" instead.",
+  "file_path": "packages/next/src/server/next.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "cacheTag() is only available with the experimental.dynamicIO config.",
+  "file_path": "packages/next/src/server/use-cache/cache-tag.ts",
+  "occurrence_count": 1
+}

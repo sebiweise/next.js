@@ -1,0 +1,5 @@
+{
+  "error_message": "Webpack config is undefined. You may have forgot to return properly from within the \"webpack\" method of your %s.\\nSee more info here https://nextjs.org/docs/messages/undefined-webpack-config",
+  "file_path": "packages/next/src/build/webpack-config.ts",
+  "occurrence_count": 1
+}

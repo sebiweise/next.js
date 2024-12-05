@@ -1,0 +1,5 @@
+{
+  "error_message": "Nonce value from Content-Security-Policy contained HTML escape characters.\nLearn more: https://nextjs.org/docs/messages/nonce-contained-invalid-characters",
+  "file_path": "packages/next/src/server/app-render/get-script-nonce-from-header.tsx",
+  "occurrence_count": 1
+}

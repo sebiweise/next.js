@@ -1,0 +1,5 @@
+{
+  "error_message": "Page %s does not export a default function.",
+  "file_path": "packages/next/src/server/route-modules/pages-api/module.ts",
+  "occurrence_count": 1
+}

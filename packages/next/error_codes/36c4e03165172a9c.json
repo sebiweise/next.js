@@ -1,0 +1,5 @@
+{
+  "error_message": "transformSync doesn't implement taking the source code as Buffer",
+  "file_path": "packages/next/src/build/swc/index.ts",
+  "occurrence_count": 1
+}

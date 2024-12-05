@@ -1,0 +1,5 @@
+{
+  "error_message": "Expected config.httpAgentOptions to be an object",
+  "file_path": "packages/next/src/server/setup-http-agent-env.ts",
+  "occurrence_count": 1
+}

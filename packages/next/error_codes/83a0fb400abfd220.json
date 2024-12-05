@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: Expected to replace at least one import",
+  "file_path": "packages/next/src/build/load-entrypoint.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Image with src \"%s\" is missing required \"height\" property.",
+  "file_path": "packages/next/src/shared/lib/get-img-props.ts",
+  "occurrence_count": 1
+}

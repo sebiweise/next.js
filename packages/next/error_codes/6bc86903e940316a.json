@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: could not resolve page path for %s at %s",
+  "file_path": "packages/next/src/build/webpack/loaders/next-app-loader/create-app-route-code.ts",
+  "occurrence_count": 1
+}

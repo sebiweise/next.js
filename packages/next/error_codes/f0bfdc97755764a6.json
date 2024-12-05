@@ -1,0 +1,5 @@
+{
+  "error_message": "request.headers must be an instance of Headers",
+  "file_path": "packages/next/src/server/web/spec-extension/response.ts",
+  "occurrence_count": 1
+}

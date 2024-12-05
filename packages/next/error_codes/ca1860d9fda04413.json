@@ -1,0 +1,5 @@
+{
+  "error_message": "Dynamic href \\`%s\\` found in <Link> while using the \\`/app\\` router, this is not supported. Read more: https://nextjs.org/docs/messages/app-dir-dynamic-href",
+  "file_path": "packages/next/src/client/app-dir/link.tsx",
+  "occurrence_count": 1
+}

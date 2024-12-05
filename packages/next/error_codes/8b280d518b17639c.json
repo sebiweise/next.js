@@ -1,0 +1,5 @@
+{
+  "error_message": "Failed to fetch registry info for %s, got status %s",
+  "file_path": "packages/next/src/lib/patch-incorrect-lockfile.ts",
+  "occurrence_count": 1
+}

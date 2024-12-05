@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: AsyncLocalStorage accessed in runtime where it is not available",
+  "file_path": "packages/next/src/server/app-render/async-local-storage.ts",
+  "occurrence_count": 1
+}

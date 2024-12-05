@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: response is null. This is a bug in Next.js",
+  "file_path": "packages/next/src/server/render-result.ts",
+  "occurrence_count": 1
+}

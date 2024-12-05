@@ -1,0 +1,5 @@
+{
+  "error_message": "Unexpected error: extracting params from path failed but the regular expression matched",
+  "file_path": "packages/next/src/experimental/testing/server/config-testing-utils.ts",
+  "occurrence_count": 1
+}

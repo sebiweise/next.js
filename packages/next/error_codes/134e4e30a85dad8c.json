@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid locale returned from getStaticPaths for %s, the locale %s is not specified in %s",
+  "file_path": "packages/next/src/build/utils.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "%s",
+  "file_path": "packages/next/src/server/lib/router-utils/setup-dev-bundler.ts",
+  "occurrence_count": 2
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "It looks like you didn't end your @import statement correctly. Child nodes are attached to it.",
+  "file_path": "packages/next/src/build/webpack/loaders/css-loader/src/plugins/postcss-import-parser.ts",
+  "occurrence_count": 1
+}

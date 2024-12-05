@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: expected a page response, got %s",
+  "file_path": "packages/next/src/server/base-server.ts",
+  "occurrence_count": 1
+}

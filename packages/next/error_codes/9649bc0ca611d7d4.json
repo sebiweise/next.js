@@ -1,0 +1,5 @@
+{
+  "error_message": "URL is malformed \"%s\". Please use only absolute URLs - https://nextjs.org/docs/messages/middleware-relative-urls",
+  "file_path": "packages/next/src/server/web/utils.ts",
+  "occurrence_count": 1
+}

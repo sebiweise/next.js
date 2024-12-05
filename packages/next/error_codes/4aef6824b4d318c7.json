@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: PPR cannot be enabled in export mode",
+  "file_path": "packages/next/src/export/index.ts",
+  "occurrence_count": 1
+}

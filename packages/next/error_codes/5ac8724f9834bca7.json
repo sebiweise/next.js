@@ -1,0 +1,5 @@
+{
+  "error_message": "\\`%s\\` cannot be called inside unstable_cache. Call it outside and pass an argument instead. Read more: https://nextjs.org/docs/app/api-reference/functions/unstable_cache",
+  "file_path": "packages/next/src/server/app-render/work-unit-async-storage.external.ts",
+  "occurrence_count": 1
+}

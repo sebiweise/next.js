@@ -1,0 +1,5 @@
+{
+  "error_message": "The \\`fallback\\` key must be returned from getStaticPaths in %s.\\n%s",
+  "file_path": "packages/next/src/build/utils.ts",
+  "occurrence_count": 1
+}

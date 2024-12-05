@@ -1,0 +1,5 @@
+{
+  "error_message": "invariant expected app router to be mounted",
+  "file_path": "packages/next/src/client/components/navigation.ts",
+  "occurrence_count": 1
+}

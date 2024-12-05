@@ -1,0 +1,5 @@
+{
+  "error_message": "The \"modules.namedExport\" option requires the \"esModules\" option to be enabled",
+  "file_path": "packages/next/src/build/webpack/loaders/css-loader/src/index.ts",
+  "occurrence_count": 1
+}

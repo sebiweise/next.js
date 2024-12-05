@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid interception route: %s. Must be in the format /<intercepting route>/(..|...|..)(..)/<intercepted route>",
+  "file_path": "packages/next/src/server/lib/interception-routes.ts",
+  "occurrence_count": 1
+}

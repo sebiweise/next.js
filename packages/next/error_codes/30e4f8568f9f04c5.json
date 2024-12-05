@@ -1,0 +1,5 @@
+{
+  "error_message": "%sused %s. \\`headers()\\` should be awaited before using its value. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis",
+  "file_path": "packages/next/src/server/request/headers.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "The 'public' directory is reserved in Next.js and can not be set as the 'distDir'. https://nextjs.org/docs/messages/can-not-output-to-public",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

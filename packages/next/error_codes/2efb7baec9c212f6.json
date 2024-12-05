@@ -1,0 +1,5 @@
+{
+  "error_message": "%s be used within %s.",
+  "file_path": "packages/next/src/build/webpack/loaders/next-font-loader/index.ts",
+  "occurrence_count": 1
+}

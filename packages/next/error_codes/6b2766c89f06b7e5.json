@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid usage of next/script. Did you forget to include a src attribute or an inline script? https://nextjs.org/docs/messages/invalid-script",
+  "file_path": "packages/next/src/pages/_document.tsx",
+  "occurrence_count": 1
+}

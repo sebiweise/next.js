@@ -4111,6 +4111,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "next-error-code-swc-plugin"
+version = "0.1.0"
+dependencies = [
+ "serde_json",
+ "swc_core",
+]
+
+[[package]]
 name = "next-swc-napi"
 version = "0.0.0"
 dependencies = [
@@ -6529,6 +6537,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "92086975747587872715a20f78fc51e7047bac58f3a6a17d4ed5a9643f3fd0a2"
 dependencies = [
  "binding_macros",
+ "once_cell",
  "swc",
  "swc_allocator",
  "swc_atoms",
@@ -6553,6 +6562,8 @@ dependencies = [
  "swc_ecma_utils",
  "swc_ecma_visit",
  "swc_nodejs_common",
+ "swc_plugin",
+ "swc_plugin_macro",
  "swc_plugin_proxy",
  "swc_plugin_runner",
  "testing",
@@ -7514,6 +7525,15 @@ dependencies = [
  "serde_json",
  "tracing",
  "tracing-subscriber",
+]
+
+[[package]]
+name = "swc_plugin"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6b45099a38ed45528bef939d0eac1a0c1347749d0c67d3dd744d545316c5fd05"
+dependencies = [
+ "once_cell",
 ]
 
 [[package]]

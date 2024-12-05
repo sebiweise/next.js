@@ -1,0 +1,5 @@
+{
+  "error_message": "The /404 page can not return notFound in \"getStaticProps\", please remove it to continue!",
+  "file_path": "packages/next/src/server/render.tsx",
+  "occurrence_count": 1
+}

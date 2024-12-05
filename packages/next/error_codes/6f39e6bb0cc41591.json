@@ -1,0 +1,5 @@
+{
+  "error_message": "Image with src \"%s\" has invalid \"layout\" property. Provided \"%s\" should be one of %s.",
+  "file_path": "packages/next/src/client/legacy/image.tsx",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Specified pageExtensions is an empty array. Please update it with the relevant extensions or remove it.",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

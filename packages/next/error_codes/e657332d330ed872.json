@@ -1,0 +1,5 @@
+{
+  "error_message": "Copy to clipboard is not supported in this browser",
+  "file_path": "packages/next/src/client/components/react-dev-overlay/internal/components/copy-button/index.tsx",
+  "occurrence_count": 2
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: null responses cannot be streamed",
+  "file_path": "packages/next/src/server/render-result.ts",
+  "occurrence_count": 1
+}

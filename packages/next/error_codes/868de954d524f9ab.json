@@ -1,0 +1,5 @@
+{
+  "error_message": "Can't resolve main package.json file",
+  "file_path": "packages/next/src/build/jest/jest.ts",
+  "occurrence_count": 1
+}

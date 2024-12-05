@@ -1,0 +1,5 @@
+{
+  "error_message": "Edge runtime is not supported with `generateStaticParams`.",
+  "file_path": "packages/next/src/build/segment-config/app/app-segments.ts",
+  "occurrence_count": 1
+}

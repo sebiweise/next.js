@@ -1,0 +1,5 @@
+{
+  "error_message": "Cannot tee a ReactServerResult that has already been consumed",
+  "file_path": "packages/next/src/server/app-render/app-render-prerender-utils.ts",
+  "occurrence_count": 1
+}

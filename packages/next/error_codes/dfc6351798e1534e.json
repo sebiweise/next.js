@@ -1,0 +1,5 @@
+{
+  "error_message": "The router state header was sent but could not be parsed.",
+  "file_path": "packages/next/src/server/app-render/parse-and-validate-flight-router-state.tsx",
+  "occurrence_count": 1
+}

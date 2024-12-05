@@ -1,0 +1,5 @@
+{
+  "error_message": "Specified distDir is not a string, found type \"%s\"",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "invalid hex: \\`%s\\`",
+  "file_path": "packages/next/src/shared/lib/magic-identifier.ts",
+  "occurrence_count": 3
+}

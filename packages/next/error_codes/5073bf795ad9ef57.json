@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid %s header",
+  "file_path": "packages/next/src/server/accept-header.ts",
+  "occurrence_count": 3
+}

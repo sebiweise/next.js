@@ -1,0 +1,5 @@
+{
+  "error_message": "Edge function did not return a response",
+  "file_path": "packages/next/src/server/web/sandbox/sandbox.ts",
+  "occurrence_count": 1
+}

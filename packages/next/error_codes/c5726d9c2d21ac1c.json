@@ -1,0 +1,5 @@
+{
+  "error_message": "Specified i18n.locales should be an Array received %s.\\nSee more info here: https://nextjs.org/docs/messages/invalid-i18n-config",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

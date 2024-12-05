@@ -1,0 +1,5 @@
+{
+  "error_message": "No default cacheLife profile.",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

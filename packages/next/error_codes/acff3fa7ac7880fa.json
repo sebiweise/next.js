@@ -1,0 +1,5 @@
+{
+  "error_message": "predicate must return an absolute path or the result of calling next()",
+  "file_path": "packages/next/src/build/webpack/loaders/resolve-url-loader/lib/join-function.ts",
+  "occurrence_count": 1
+}

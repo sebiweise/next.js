@@ -1,0 +1,5 @@
+{
+  "error_message": "Expected source to have been transformed to a string.",
+  "file_path": "packages/next/src/build/webpack/loaders/next-flight-loader/index.ts",
+  "occurrence_count": 1
+}

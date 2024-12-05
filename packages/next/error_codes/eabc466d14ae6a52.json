@@ -1,0 +1,5 @@
+{
+  "error_message": "Extra keys returned from getStaticPaths in %s (%s) %s",
+  "file_path": "packages/next/src/build/utils.ts",
+  "occurrence_count": 1
+}

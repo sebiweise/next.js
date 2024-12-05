@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: routeModule should be configured when rendering pages",
+  "file_path": "packages/next/src/server/web-server.ts",
+  "occurrence_count": 1
+}

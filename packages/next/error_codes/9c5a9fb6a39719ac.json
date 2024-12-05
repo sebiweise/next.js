@@ -1,0 +1,5 @@
+{
+  "error_message": "Failed to parse source map URL for %s.",
+  "file_path": "packages/next/src/client/components/react-dev-overlay/internal/helpers/get-source-map-from-file.ts",
+  "occurrence_count": 1
+}

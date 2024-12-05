@@ -1,0 +1,5 @@
+{
+  "error_message": "'router' and 'Component' can not be returned in getInitialProps from _app.js https://nextjs.org/docs/messages/cant-override-next-props",
+  "file_path": "packages/next/src/server/render.tsx",
+  "occurrence_count": 1
+}

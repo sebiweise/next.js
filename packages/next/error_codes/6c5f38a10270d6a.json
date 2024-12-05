@@ -1,0 +1,5 @@
+{
+  "error_message": "Pattern should define hostname but found\\n%s",
+  "file_path": "packages/next/src/shared/lib/match-remote-pattern.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: basePath must be set and cannot be \"/\"",
+  "file_path": "packages/next/src/server/normalizers/request/base-path.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Failed to initialize render server",
+  "file_path": "packages/next/src/server/lib/router-server.ts",
+  "occurrence_count": 1
+}

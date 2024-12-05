@@ -8,6 +8,10 @@ const path = require('path')
 // eslint-disable-next-line import/no-extraneous-dependencies
 const transform = require('@swc/core').transform
 
+const COMMIT_HASH = getCommitHash()
+
+const IS_CI = Boolean(process.env.CI)
+
 module.exports = function (task) {
   // eslint-disable-next-line require-yield
   task.plugin(
@@ -20,6 +24,12 @@ module.exports = function (task) {
     ) {
       // Don't compile .d.ts
       if (file.base.endsWith('.d.ts') || file.base.endsWith('.json')) return
+
+      const nextErrorCodeSwcPlugin = getNextErrorCodeSwcPlugin({
+        filePath: path.join('packages/next', file.dir, file.base),
+        commitHash: COMMIT_HASH,
+        mode: IS_CI ? 'check' : 'generate',
+      })
 
       const isClient = serverOrClient === 'client'
       /** @type {import('@swc/core').Options} */
@@ -47,6 +57,7 @@ module.exports = function (task) {
           },
           experimental: {
             keepImportAttributes: esm,
+            plugins: [nextErrorCodeSwcPlugin],
           },
           transform: {
             react: {
@@ -92,6 +103,7 @@ module.exports = function (task) {
           },
           experimental: {
             keepImportAttributes: esm,
+            plugins: [nextErrorCodeSwcPlugin],
           },
           transform: {
             react: {
@@ -184,4 +196,18 @@ function setNextVersion(code) {
         ]
       }"`
     )
+}
+
+function getCommitHash() {
+  return require('child_process')
+    .execSync('git rev-parse --short=10 HEAD')
+    .toString()
+    .trim()
+}
+
+function getNextErrorCodeSwcPlugin({ commitHash, filePath, mode }) {
+  return [
+    path.join(__dirname, 'next_error_code_swc_plugin.wasm'),
+    { commitHash, filePath, mode },
+  ]
 }

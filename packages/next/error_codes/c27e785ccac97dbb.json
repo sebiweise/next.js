@@ -1,0 +1,5 @@
+{
+  "error_message": "Turbopack build failed with %s issues:\\n%s",
+  "file_path": "packages/next/src/build/index.ts",
+  "occurrence_count": 1
+}

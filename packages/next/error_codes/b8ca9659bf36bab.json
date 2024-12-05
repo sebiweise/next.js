@@ -1,0 +1,5 @@
+{
+  "error_message": "\\`unauthorized()\\` is experimental and only allowed to be used when \\`experimental.authInterrupts\\` is enabled.",
+  "file_path": "packages/next/src/client/components/unauthorized.ts",
+  "occurrence_count": 1
+}

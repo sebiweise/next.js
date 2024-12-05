@@ -1,0 +1,5 @@
+{
+  "error_message": "invariant expected layout router to be mounted",
+  "file_path": "packages/next/src/client/components/layout-router.tsx",
+  "occurrence_count": 1
+}

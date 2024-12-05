@@ -1,0 +1,5 @@
+{
+  "error_message": "[%s]: experimental.useLightningcss does not work with postcss plugins. Please remove 'useLightningcss: true' from your configuration.",
+  "file_path": "packages/next/src/build/webpack/loaders/lightningcss-loader/src/loader.ts",
+  "occurrence_count": 1
+}

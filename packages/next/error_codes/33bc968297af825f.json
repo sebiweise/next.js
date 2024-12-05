@@ -1,0 +1,5 @@
+{
+  "error_message": "Middleware is not supported in minimal mode. Please remove the `NEXT_MINIMAL` environment variable.",
+  "file_path": "packages/next/src/server/next-server.ts",
+  "occurrence_count": 1
+}

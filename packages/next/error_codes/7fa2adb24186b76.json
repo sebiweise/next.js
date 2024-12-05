@@ -1,0 +1,5 @@
+{
+  "error_message": "getStaticPaths was added without a getStaticProps in %s. Without getStaticProps, getStaticPaths does nothing",
+  "file_path": "packages/next/src/server/render.tsx",
+  "occurrence_count": 1
+}

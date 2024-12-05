@@ -1,0 +1,5 @@
+{
+  "error_message": "Image with src \"%s\" has both \"fill\" and \"style.position\" properties. Images with \"fill\" always use position absolute - it cannot be modified.",
+  "file_path": "packages/next/src/shared/lib/get-img-props.ts",
+  "occurrence_count": 1
+}

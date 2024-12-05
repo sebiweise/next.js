@@ -1,0 +1,5 @@
+{
+  "error_message": "No 'cssModules' option was found for the next-flight-css-loader plugin.",
+  "file_path": "packages/next/src/build/webpack/loaders/next-flight-css-loader.ts",
+  "occurrence_count": 1
+}

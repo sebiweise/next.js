@@ -1,0 +1,5 @@
+{
+  "error_message": "Next Image Optimization requires %s to be provided. Make sure you pass them as props to the \\`next/image\\` component. Received: %s",
+  "file_path": "packages/next/src/shared/lib/image-loader.ts",
+  "occurrence_count": 1
+}

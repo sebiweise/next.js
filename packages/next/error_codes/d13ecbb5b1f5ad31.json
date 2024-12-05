@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: Unsupported NextRequest type",
+  "file_path": "packages/next/src/server/web/spec-extension/adapters/next-request.ts",
+  "occurrence_count": 1
+}

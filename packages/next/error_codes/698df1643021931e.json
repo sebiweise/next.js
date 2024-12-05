@@ -1,0 +1,5 @@
+{
+  "error_message": "transformSync doesn't implement reading the file from filesystem",
+  "file_path": "packages/next/src/build/swc/index.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "`unstable_after()` will not work correctly, because `waitUntil` is not available in the current environment.",
+  "file_path": "packages/next/src/server/after/after-context.ts",
+  "occurrence_count": 1
+}

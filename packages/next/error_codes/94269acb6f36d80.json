@@ -1,0 +1,5 @@
+{
+  "error_message": "hmrRefresh can only be used in development mode. Please use refresh instead.",
+  "file_path": "packages/next/src/client/components/app-router.tsx",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Failed to create a proxy server",
+  "file_path": "packages/next/src/experimental/testmode/proxy/server.ts",
+  "occurrence_count": 1
+}

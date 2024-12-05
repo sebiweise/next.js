@@ -1,0 +1,5 @@
+{
+  "error_message": "invariant: progress total can not be zero",
+  "file_path": "packages/next/src/build/progress.ts",
+  "occurrence_count": 1
+}

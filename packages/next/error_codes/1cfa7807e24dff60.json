@@ -1,0 +1,5 @@
+{
+  "error_message": "You cannot use different slug names for the same dynamic path ('%s' !== '%s').",
+  "file_path": "packages/next/src/shared/lib/router/utils/sorted-routes.ts",
+  "occurrence_count": 1
+}

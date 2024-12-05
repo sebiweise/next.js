@@ -1,0 +1,5 @@
+{
+  "error_message": "Dynamic Code Evaluation (e. g. 'eval', 'new Function') not allowed in Edge Runtime\nLearn More: https://nextjs.org/docs/messages/edge-dynamic-code-evaluation",
+  "file_path": "packages/next/src/server/web/sandbox/context.ts",
+  "occurrence_count": 1
+}

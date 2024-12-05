@@ -1,0 +1,5 @@
+{
+  "error_message": "Unknown \"loader\" found in \"next.config.js\". Expected: %s. Received: %s",
+  "file_path": "packages/next/src/client/legacy/image.tsx",
+  "occurrence_count": 1
+}

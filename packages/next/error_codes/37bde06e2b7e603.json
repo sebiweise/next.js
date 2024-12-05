@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: expected to find identity in indexes map",
+  "file_path": "packages/next/src/server/route-matcher-managers/default-route-matcher-manager.ts",
+  "occurrence_count": 1
+}

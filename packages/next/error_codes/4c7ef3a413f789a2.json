@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid compiler type",
+  "file_path": "packages/next/src/build/entries.ts",
+  "occurrence_count": 1
+}

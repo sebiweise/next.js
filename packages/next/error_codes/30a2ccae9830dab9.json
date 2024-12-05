@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: chainStreams requires at least one stream",
+  "file_path": "packages/next/src/server/stream-utils/node-web-streams-helper.ts",
+  "occurrence_count": 1
+}

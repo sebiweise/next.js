@@ -1,0 +1,5 @@
+{
+  "error_message": "An undefined error was thrown, see here for more info: https://nextjs.org/docs/messages/threw-undefined",
+  "file_path": "packages/next/src/lib/is-error.ts",
+  "occurrence_count": 1
+}

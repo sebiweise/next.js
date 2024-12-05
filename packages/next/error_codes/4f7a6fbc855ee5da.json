@@ -1,0 +1,5 @@
+{
+  "error_message": "If providing both the stale and expire options, the expire option must be greater than the stale option.The expire option indicates how many seconds from the start until it can no longer be used.",
+  "file_path": "packages/next/src/server/use-cache/cache-life.ts",
+  "occurrence_count": 1
+}

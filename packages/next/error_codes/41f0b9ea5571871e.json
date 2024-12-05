@@ -1,0 +1,5 @@
+{
+  "error_message": "You cannot define a route with the same specificity as a optional catch-all route (\"%s\" and \"%s[[...%s]]\").",
+  "file_path": "packages/next/src/shared/lib/router/utils/sorted-routes.ts",
+  "occurrence_count": 1
+}

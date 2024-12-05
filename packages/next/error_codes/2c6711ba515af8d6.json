@@ -1,0 +1,5 @@
+{
+  "error_message": "> Couldn't find any `pages` or `app` directory. Please create one under the project root",
+  "file_path": "packages/next/src/lib/find-pages-dir.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Module `sharp` not found. Please run `npm install --cpu=wasm32 sharp` to install it.",
+  "file_path": "packages/next/src/server/image-optimizer.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "Invalid handler fields configured for \"experimental.cacheHandler\":\\n%s",
+  "file_path": "packages/next/src/server/config.ts",
+  "occurrence_count": 1
+}

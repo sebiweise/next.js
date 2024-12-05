@@ -1,0 +1,5 @@
+{
+  "error_message": "Invariant: isDynamicPostpone misidentified a postpone reason. This is a bug in Next.js",
+  "file_path": "packages/next/src/server/app-render/dynamic-rendering.ts",
+  "occurrence_count": 1
+}

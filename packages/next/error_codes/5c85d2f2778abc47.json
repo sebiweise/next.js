@@ -1,0 +1,5 @@
+{
+  "error_message": "Failed to parse \"%s\":\\n%s",
+  "file_path": "packages/next/src/build/load-jsconfig.ts",
+  "occurrence_count": 1
+}

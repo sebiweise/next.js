@@ -1,0 +1,5 @@
+{
+  "error_message": "failed to write chunk to response",
+  "file_path": "packages/next/src/server/pipe-readable.ts",
+  "occurrence_count": 1
+}

@@ -1,0 +1,5 @@
+{
+  "error_message": "\"use cache\" cannot be used outside of App Router. Expected a WorkStore.",
+  "file_path": "packages/next/src/server/use-cache/use-cache-wrapper.ts",
+  "occurrence_count": 1
+}

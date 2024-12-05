@@ -1,0 +1,5 @@
+{
+  "error_message": "NodeModuleLoader is not supported in edge runtime.",
+  "file_path": "packages/next/src/server/lib/module-loader/node-module-loader.ts",
+  "occurrence_count": 1
+}

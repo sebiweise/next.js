@@ -1,0 +1,5 @@
+{
+  "error_message": "Could not find a production build in the '%s' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id",
+  "file_path": "packages/next/src/server/next-server.ts",
+  "occurrence_count": 1
+}

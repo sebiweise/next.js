@@ -1,0 +1,5 @@
+{
+  "error_message": "invariant",
+  "file_path": "packages/next/src/build/babel/plugins/next-ssg-transform.ts",
+  "occurrence_count": 2
+}
