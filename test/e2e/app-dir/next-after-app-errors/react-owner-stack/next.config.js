@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   experimental: {
-    testProxy: true,
+    after: true,
+    reactOwnerStack: true,
   },
 }
