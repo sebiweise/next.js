@@ -1,6 +1,6 @@
 use anyhow::Result;
 use turbo_rcstr::RcStr;
-use turbo_tasks::Vc;
+use turbo_tasks::{ResolvedVc, Vc};
 use turbo_tasks_fs::FileSystemPath;
 
 use super::{
@@ -11,10 +11,10 @@ use crate::ident::AssetIdent;
 
 #[turbo_tasks::value(shared)]
 pub struct AnalyzeIssue {
-    pub severity: Vc<IssueSeverity>,
+    pub severity: ResolvedVc<IssueSeverity>,
     pub source_ident: Vc<AssetIdent>,
-    pub title: Vc<RcStr>,
-    pub message: Vc<StyledString>,
+    pub title: ResolvedVc<RcStr>,
+    pub message: ResolvedVc<StyledString>,
     pub code: Option<RcStr>,
     pub source: Option<Vc<IssueSource>>,
 }
@@ -23,7 +23,7 @@ pub struct AnalyzeIssue {
 impl Issue for AnalyzeIssue {
     #[turbo_tasks::function]
     fn severity(&self) -> Vc<IssueSeverity> {
-        self.severity
+        *self.severity
     }
 
     #[turbo_tasks::function]
@@ -57,10 +57,15 @@ impl Issue for AnalyzeIssue {
     }
 
     #[turbo_tasks::function]
-    fn source(&self) -> Vc<OptionIssueSource> {
-        Vc::cell(
-            self.source
-                .map(|s| s.resolve_source_map(self.source_ident.path())),
-        )
+    async fn source(&self) -> Result<Vc<OptionIssueSource>> {
+        Ok(Vc::cell(match self.source {
+            Some(source) => Some(
+                source
+                    .resolve_source_map(self.source_ident.path())
+                    .to_resolved()
+                    .await?,
+            ),
+            None => None,
+        }))
     }
 }

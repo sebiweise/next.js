@@ -24,7 +24,9 @@ use tokio::{io::AsyncWriteExt, time::Instant};
 use tracing::Instrument;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt, EnvFilter, Registry};
 use turbo_rcstr::RcStr;
-use turbo_tasks::{get_effects, Completion, Effects, ReadRef, TransientInstance, UpdateInfo, Vc};
+use turbo_tasks::{
+    get_effects, Completion, Effects, ReadRef, ResolvedVc, TransientInstance, UpdateInfo, Vc,
+};
 use turbo_tasks_fs::{
     util::uri_from_file, DiskFileSystem, FileContent, FileSystem, FileSystemPath,
 };
@@ -696,15 +698,15 @@ pub fn project_entrypoints_subscribe(
                         .transpose()?,
                     pages_document_endpoint: External::new(ExternalEndpoint(VcArc::new(
                         turbo_tasks.clone(),
-                        entrypoints.pages_document_endpoint,
+                        *entrypoints.pages_document_endpoint,
                     ))),
                     pages_app_endpoint: External::new(ExternalEndpoint(VcArc::new(
                         turbo_tasks.clone(),
-                        entrypoints.pages_app_endpoint,
+                        *entrypoints.pages_app_endpoint,
                     ))),
                     pages_error_endpoint: External::new(ExternalEndpoint(VcArc::new(
                         turbo_tasks.clone(),
-                        entrypoints.pages_error_endpoint,
+                        *entrypoints.pages_error_endpoint,
                     ))),
                 },
                 issues: issues
@@ -1023,7 +1025,7 @@ pub struct StackFrame {
 pub async fn get_source_map(
     container: Vc<ProjectContainer>,
     file_path: String,
-) -> Result<Option<Vc<SourceMap>>> {
+) -> Result<Option<ResolvedVc<SourceMap>>> {
     let (file, module) = match Url::parse(&file_path) {
         Ok(url) => match url.scheme() {
             "file" => {

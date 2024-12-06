@@ -84,7 +84,7 @@ these can be leveraged by prefixing the `pnpm test` command.
 
 - When investigating failures in isolated tests you can use
   `NEXT_TEST_SKIP_CLEANUP=1` to prevent deleting the temp folder created for the test,
-  then you can run `pnpm next` while inside the temp folder to debug the fully set-up test project.
+  then you can run `pnpm debug` while inside the temp folder to debug the fully set-up test project.
 - You can also use `NEXT_SKIP_ISOLATE=1` if the test doesn't need to be installed to debug,
   and it will run inside the Next.js repo instead of the temp directory,
   this can also reduce test times locally but is not compatible with all tests.
@@ -106,17 +106,6 @@ and then inspected with `pnpm playwright show-trace ./path/to/trace`
 ### Profiling tests
 
 Add `NEXT_TEST_TRACE=1` to enable test profiling. It's useful for improving our testing infrastructure.
-
-### Recording the browser using Replay.io
-
-Using [Replay.io](https://www.replay.io/) you can record and time-travel debug the browser.
-
-1. Clear all local replays using `pnpm replay rm-all`
-2. Run the test locally using the `RECORD_REPLAY=1` environment variables.
-   (e.g. `RECORD_REPLAY=1 pnpm test-dev test/e2e/app-dir/app/index.test.ts`)
-3. Upload all the replays to your workspace using your API key:
-   `RECORD_REPLAY_API_KEY=addkeyhere pnpm replay upload-all`
-4. Check the uploaded replays in your workspace, while uploading it provides the URLs.
 
 ### Testing Turbopack
 

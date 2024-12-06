@@ -4,14 +4,34 @@ import * as url from 'url'
 import type * as util from 'util'
 import { SourceMapConsumer as SyncSourceMapConsumer } from 'next/dist/compiled/source-map'
 import type { StackFrame } from 'next/dist/compiled/stacktrace-parser'
-import { parseStack } from '../client/components/react-dev-overlay/server/middleware'
+import { parseStack } from '../client/components/react-dev-overlay/server/middleware-webpack'
 import { getOriginalCodeFrame } from '../client/components/react-dev-overlay/server/shared'
 import { workUnitAsyncStorage } from './app-render/work-unit-async-storage.external'
 import { dim } from '../lib/picocolors'
 
+/**
+ * https://tc39.es/source-map/#index-map
+ */
+interface IndexSourceMapSection {
+  offset: {
+    line: number
+    column: number
+  }
+  map: ModernRawSourceMap
+}
+
+// TODO(veil): Upstream types
+interface IndexSourceMap {
+  version: number
+  file: string
+  sections: IndexSourceMapSection[]
+}
+
 interface ModernRawSourceMap extends SourceMapPayload {
   ignoreList?: number[]
 }
+
+type ModernSourceMapPayload = ModernRawSourceMap | IndexSourceMap
 
 interface IgnoreableStackFrame extends StackFrame {
   ignored: boolean
@@ -19,11 +39,8 @@ interface IgnoreableStackFrame extends StackFrame {
 
 type SourceMapCache = Map<
   string,
-  { map: SyncSourceMapConsumer; raw: ModernRawSourceMap }
+  { map: SyncSourceMapConsumer; payload: ModernSourceMapPayload }
 >
-
-// TODO: Implement for Edge runtime
-const inspectSymbol = Symbol.for('nodejs.util.inspect.custom')
 
 function frameToString(frame: StackFrame): string {
   let sourceLocation = frame.lineNumber !== null ? `:${frame.lineNumber}` : ''
@@ -77,6 +94,37 @@ function shouldIgnoreListByDefault(file: string): boolean {
   return file.startsWith('node:')
 }
 
+/**
+ * Finds the sourcemap payload applicable to a given frame.
+ * Equal to the input unless an Index Source Map is used.
+ */
+function findApplicableSourceMapPayload(
+  frame: StackFrame,
+  payload: ModernSourceMapPayload
+): ModernRawSourceMap | undefined {
+  if ('sections' in payload) {
+    const frameLine = frame.lineNumber ?? 0
+    const frameColumn = frame.column ?? 0
+    // Sections must not overlap and must be sorted: https://tc39.es/source-map/#section-object
+    // Therefore the last section that has an offset less than or equal to the frame is the applicable one.
+    // TODO(veil): Binary search
+    let section: IndexSourceMapSection | undefined = payload.sections[0]
+    for (
+      let i = 0;
+      i < payload.sections.length &&
+      payload.sections[i].offset.line <= frameLine &&
+      payload.sections[i].offset.column <= frameColumn;
+      i++
+    ) {
+      section = payload.sections[i]
+    }
+
+    return section === undefined ? undefined : section.map
+  } else {
+    return payload
+  }
+}
+
 function getSourcemappedFrameIfPossible(
   frame: StackFrame,
   sourceMapCache: SourceMapCache
@@ -91,24 +139,24 @@ function getSourcemappedFrameIfPossible(
 
   const sourceMapCacheEntry = sourceMapCache.get(frame.file)
   let sourceMap: SyncSourceMapConsumer
-  let rawSourceMap: ModernRawSourceMap
+  let sourceMapPayload: ModernSourceMapPayload
   if (sourceMapCacheEntry === undefined) {
     const moduleSourceMap = findSourceMap(frame.file)
     if (moduleSourceMap === undefined) {
       return null
     }
-    rawSourceMap = moduleSourceMap.payload
+    sourceMapPayload = moduleSourceMap.payload
     sourceMap = new SyncSourceMapConsumer(
       // @ts-expect-error -- Module.SourceMap['version'] is number but SyncSourceMapConsumer wants a string
-      rawSourceMap
+      sourceMapPayload
     )
     sourceMapCache.set(frame.file, {
       map: sourceMap,
-      raw: rawSourceMap,
+      payload: sourceMapPayload,
     })
   } else {
     sourceMap = sourceMapCacheEntry.map
-    rawSourceMap = sourceMapCacheEntry.raw
+    sourceMapPayload = sourceMapCacheEntry.payload
   }
 
   const sourcePosition = sourceMap.originalPositionFor({
@@ -126,9 +174,21 @@ function getSourcemappedFrameIfPossible(
       /* returnNullOnMissing */ true
     ) ?? null
 
-  // TODO: O(n^2). Consider moving `ignoreList` into a Set
-  const sourceIndex = rawSourceMap.sources.indexOf(sourcePosition.source)
-  const ignored = rawSourceMap.ignoreList?.includes(sourceIndex) ?? false
+  const applicableSourceMap = findApplicableSourceMapPayload(
+    frame,
+    sourceMapPayload
+  )
+  // TODO(veil): Upstream a method to sourcemap consumer that immediately says if a frame is ignored or not.
+  let ignored = false
+  if (applicableSourceMap === undefined) {
+    console.error('No applicable source map found in sections for frame', frame)
+  } else {
+    // TODO: O(n^2). Consider moving `ignoreList` into a Set
+    const sourceIndex = applicableSourceMap.sources.indexOf(
+      sourcePosition.source
+    )
+    ignored = applicableSourceMap.ignoreList?.includes(sourceIndex) ?? false
+  }
 
   const originalFrame: IgnoreableStackFrame = {
     methodName:
@@ -224,36 +284,46 @@ function parseAndSourceMap(error: Error): string {
   )
 }
 
-export function patchErrorInspect() {
-  Error.prepareStackTrace = prepareUnsourcemappedStackTrace
+function sourceMapError(this: void, error: Error): Error {
+  // Create a new Error object with the source mapping applied and then use native
+  // Node.js formatting on the result.
+  const newError =
+    error.cause !== undefined
+      ? // Setting an undefined `cause` would print `[cause]: undefined`
+        new Error(error.message, { cause: error.cause })
+      : new Error(error.message)
+
+  // TODO: Ensure `class MyError extends Error {}` prints `MyError` as the name
+  newError.stack = parseAndSourceMap(error)
+
+  for (const key in error) {
+    if (!Object.prototype.hasOwnProperty.call(newError, key)) {
+      // @ts-expect-error -- We're copying all enumerable properties.
+      // So they definitely exist on `this` and obviously have no type on `newError` (yet)
+      newError[key] = error[key]
+    }
+  }
+
+  return newError
+}
+
+export function patchErrorInspectNodeJS(
+  errorConstructor: ErrorConstructor
+): void {
+  const inspectSymbol = Symbol.for('nodejs.util.inspect.custom')
+
+  errorConstructor.prepareStackTrace = prepareUnsourcemappedStackTrace
 
   // @ts-expect-error -- TODO upstream types
   // eslint-disable-next-line no-extend-native -- We're not extending but overriding.
-  Error.prototype[inspectSymbol] = function (
+  errorConstructor.prototype[inspectSymbol] = function (
     depth: number,
     inspectOptions: util.InspectOptions,
     inspect: typeof util.inspect
   ): string {
     // avoid false-positive dynamic i/o warnings e.g. due to usage of `Math.random` in `source-map`.
     return workUnitAsyncStorage.exit(() => {
-      // Create a new Error object with the source mapping applied and then use native
-      // Node.js formatting on the result.
-      const newError =
-        this.cause !== undefined
-          ? // Setting an undefined `cause` would print `[cause]: undefined`
-            new Error(this.message, { cause: this.cause })
-          : new Error(this.message)
-
-      // TODO: Ensure `class MyError extends Error {}` prints `MyError` as the name
-      newError.stack = parseAndSourceMap(this)
-
-      for (const key in this) {
-        if (!Object.prototype.hasOwnProperty.call(newError, key)) {
-          // @ts-expect-error -- We're copying all enumerable properties.
-          // So they definitely exist on `this` and obviously have no type on `newError` (yet)
-          newError[key] = this[key]
-        }
-      }
+      const newError = sourceMapError(this)
 
       const originalCustomInspect = (newError as any)[inspectSymbol]
       // Prevent infinite recursion.
@@ -271,6 +341,40 @@ export function patchErrorInspect() {
               // Default in Node.js
               2) - depth,
         })
+      } finally {
+        ;(newError as any)[inspectSymbol] = originalCustomInspect
+      }
+    })
+  }
+}
+
+export function patchErrorInspectEdgeLite(
+  errorConstructor: ErrorConstructor
+): void {
+  const inspectSymbol = Symbol.for('edge-runtime.inspect.custom')
+
+  errorConstructor.prepareStackTrace = prepareUnsourcemappedStackTrace
+
+  // @ts-expect-error -- TODO upstream types
+  // eslint-disable-next-line no-extend-native -- We're not extending but overriding.
+  errorConstructor.prototype[inspectSymbol] = function ({
+    format,
+  }: {
+    format: (...args: unknown[]) => string
+  }): string {
+    // avoid false-positive dynamic i/o warnings e.g. due to usage of `Math.random` in `source-map`.
+    return workUnitAsyncStorage.exit(() => {
+      const newError = sourceMapError(this)
+
+      const originalCustomInspect = (newError as any)[inspectSymbol]
+      // Prevent infinite recursion.
+      Object.defineProperty(newError, inspectSymbol, {
+        value: undefined,
+        enumerable: false,
+        writable: true,
+      })
+      try {
+        return format(newError)
       } finally {
         ;(newError as any)[inspectSymbol] = originalCustomInspect
       }

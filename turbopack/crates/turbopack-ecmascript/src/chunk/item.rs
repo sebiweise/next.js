@@ -22,7 +22,7 @@ use crate::{
 #[derive(Default, Clone)]
 pub struct EcmascriptChunkItemContent {
     pub inner_code: Rope,
-    pub source_map: Option<Vc<Box<dyn GenerateSourceMap>>>,
+    pub source_map: Option<ResolvedVc<Box<dyn GenerateSourceMap>>>,
     pub options: EcmascriptChunkItemOptions,
     pub rewrite_source_path: Option<ResolvedVc<FileSystemPath>>,
     pub placeholder_for_future_extensions: (),
@@ -121,9 +121,9 @@ impl EcmascriptChunkItemContent {
             args.push("e: exports");
         }
         if self.options.stub_require {
-            args.push("z: require");
+            args.push("z: __turbopack_require_stub__");
         } else {
-            args.push("t: require");
+            args.push("t: __turbopack_require_real__");
         }
         if self.options.wasm {
             args.push("w: __turbopack_wasm__");
@@ -155,11 +155,12 @@ impl EcmascriptChunkItemContent {
             match source_map {
                 Some(map) => fileify_source_map(map, *rewrite_source_path)
                     .await?
+                    .map(|v| *v)
                     .map(Vc::upcast),
                 None => None,
             }
         } else {
-            self.source_map
+            self.source_map.map(|v| *v)
         };
 
         code.push_source(&self.inner_code, source_map);
@@ -193,8 +194,8 @@ pub struct EcmascriptChunkItemOptions {
     /// Whether this chunk item's module factory should include an `exports`
     /// argument.
     pub exports: bool,
-    /// Whether this chunk item's module factory should include an argument for the real `require`,
-    /// or just a throwing stub (for ESM)
+    /// Whether this chunk item's module factory should include an argument for a throwing require
+    /// stub (for ESM)
     pub stub_require: bool,
     /// Whether this chunk item's module factory should include a
     /// `__turbopack_external_require__` argument.
@@ -265,11 +266,11 @@ async fn module_factory_with_code_generation_issue(
                 let error_message = format!("{}", PrettyPrintError(&error)).into();
                 let js_error_message = serde_json::to_string(&error_message)?;
                 CodeGenerationIssue {
-                    severity: IssueSeverity::Error.cell(),
-                    path: chunk_item.asset_ident().path(),
+                    severity: IssueSeverity::Error.resolved_cell(),
+                    path: chunk_item.asset_ident().path().to_resolved().await?,
                     title: StyledString::Text("Code generation for chunk item errored".into())
-                        .cell(),
-                    message: StyledString::Text(error_message).cell(),
+                        .resolved_cell(),
+                    message: StyledString::Text(error_message).resolved_cell(),
                 }
                 .cell()
                 .emit();
