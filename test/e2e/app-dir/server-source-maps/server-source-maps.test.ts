@@ -13,7 +13,10 @@ describe('app-dir - server source maps', () => {
     // 'link:' is not suitable for this test since this makes internal-pkg
     // not appear in node_modules.
     {
-      'internal-pkg': `file:${path.resolve(__dirname, 'fixtures/default/internal-pkg')}`,
+      'internal-pkg': `file:${path.resolve(
+        __dirname,
+        'fixtures/default/internal-pkg'
+      )}`,
     }
   const { skipped, next, isNextDev, isTurbopack } = nextTestSetup({
     dependencies,
@@ -154,7 +157,7 @@ describe('app-dir - server source maps', () => {
 
   it('thrown SSR errors', async () => {
     const outputIndex = next.cliOutput.length
-    await next.render('/ssr-throw')
+    const browser = await next.browser('/ssr-throw')
 
     if (isNextDev) {
       await retry(() => {
@@ -189,6 +192,13 @@ describe('app-dir - server source maps', () => {
               "\n  digest: '"
       )
       expect(cliOutput).toMatch(/digest: '\d+'/)
+
+      await expect(browser).toDisplayRedbox(`
+        {
+          "stack": "throwError
+        app/ssr-throw/Thrower.js (8:3)",
+        }
+      `)
     } else {
       // TODO: Test `next build` with `--enable-source-maps`.
     }
