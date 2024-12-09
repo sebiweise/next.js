@@ -4,6 +4,7 @@ use std::{
 };
 
 use once_cell::sync::Lazy;
+use rustc_hash::FxHashMap;
 use swc_core::{
     common::{comments::Comments, source_map::SmallPos, BytePos, Span, Spanned},
     ecma::{
@@ -150,6 +151,8 @@ pub(crate) struct ImportMap {
     ///
     /// [magic]: https://webpack.js.org/api/module-methods/#magic-comments
     attributes: HashMap<BytePos, ImportAttributes>,
+
+    exports: FxHashMap<RcStr, Id>,
 }
 
 /// Represents a collection of [webpack-style "magic comments"][magic] that override import
