@@ -506,17 +506,13 @@ impl CodeGenerateable for EsmExports {
                     if *mutable {
                         Some(quote!(
                             "([() => $local, ($new) => $local = $new])" as Expr,
-                            local = Ident::new(local.into(), DUMMY_SP, Default::default()),
-                            new = Ident::new(
-                                format!("new_{name}").into(),
-                                DUMMY_SP,
-                                Default::default()
-                            ),
+                            local = Ident::new(local.into(), DUMMY_SP, ctxt),
+                            new = Ident::new(format!("new_{name}").into(), DUMMY_SP, ctxt),
                         ))
                     } else {
                         Some(quote!(
                             "(() => $local)" as Expr,
-                            local = Ident::new((name as &str).into(), DUMMY_SP, Default::default())
+                            local = Ident::new((name as &str).into(), DUMMY_SP, ctxt)
                         ))
                     }
                 }
